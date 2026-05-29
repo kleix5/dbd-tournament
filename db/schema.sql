@@ -1,0 +1,37 @@
+CREATE TABLE IF NOT EXISTS matches (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  map_name TEXT,
+  stage TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS teams (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  match_id INTEGER,
+  team_name TEXT,
+  captain TEXT
+);
+
+CREATE TABLE IF NOT EXISTS killers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  team_id INTEGER,
+  killer_name TEXT,
+  kills INTEGER,
+  pressure_points INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS survivors (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  team_id INTEGER,
+  survivor_name TEXT,
+  rescues INTEGER,
+  generators INTEGER,
+  escaped BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS penalties (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  match_id INTEGER,
+  enabled BOOLEAN,
+  note TEXT
+);

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>DBD Tournament</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="container">
+
+  <header class="header">
+
+    <div>
+
+      <h1>⚡ THE FOG TOURNAMENT</h1>
+
+      <p>
+        Dead by Daylight Tournament System
+      </p>
+
+    </div>
+
+    <div class="match-settings">
+
+      <input
+        id="mapName"
+        type="text"
+        value="Железные ворота"
+      >
+
+      <input
+        id="stageName"
+        type="text"
+        value="Групповой этап"
+      >
+
+    </div>
+
+  </header>
+
+  <main class="match-grid">
+
+    <!-- TEAM 1 -->
+
+    <section class="team-card">
+
+      <div class="team-top">
+
+        <input
+          class="team-name"
+          value="БЕЗЖАЛОСТНЫЕ"
+        >
+
+        <input
+          class="captain"
+          value="SlasherMaster"
+        >
+
+      </div>
+
+      <div class="killer-block">
+
+        <h2>🔪 Убийца</h2>
+
+        <select class="killer-select">
+
+          <option>Wraith</option>
+
+          <option>Ghostface</option>
+
+          <option>Executioner</option>
+
+        </select>
+
+        <div class="killer-stats">
+
+          <input
+            class="killer-kills"
+            type="number"
+            value="2"
+            placeholder="Kills"
+          >
+
+          <input
+            class="killer-pressure"
+            type="number"
+            value="8450"
+            placeholder="Pressure"
+          >
+
+        </div>
+
+      </div>
+
+      <div class="survivors-block">
+
+        <h2>🏃 Выжившие</h2>
+
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Meg Thomas"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="1"
+              placeholder="Спасения"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="2"
+              placeholder="Генераторы"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Sable Ward"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="1"
+              placeholder="Спасения"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="2"
+              placeholder="Генераторы"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Mikaela Reid"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="1"
+              placeholder="Спасения"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="2"
+              placeholder="Генераторы"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Claudette"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="2"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="1"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+     
+        
+        
+
+    <!-- TEAM 2 -->
+
+    <section class="team-card">
+
+      <div class="team-top">
+
+        <input
+          class="team-name"
+          value="РАССВЕТ"
+        >
+
+        <input
+          class="captain"
+          value="NightOwl"
+        >
+
+      </div>
+
+      <div class="killer-block">
+
+        <h2>🔪 Убийца</h2>
+
+        <select class="killer-select">
+
+          <option>Ghostface</option>
+
+          <option>Wraith</option>
+
+          <option>Executioner</option>
+
+        </select>
+
+        <div class="killer-stats">
+
+          <input
+            class="killer-kills"
+            type="number"
+            value="4"
+          >
+
+          <input
+            class="killer-pressure"
+            type="number"
+            value="11200"
+          >
+
+        </div>
+
+      </div>
+
+      <div class="survivors-block">
+
+        <h2>🏃 Выжившие</h2>
+
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Ada Wong"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="0"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="1"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Vee Boonyasak"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="1"
+              placeholder="Спасения"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="2"
+              placeholder="Генераторы"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Lara Kroft"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="1"
+              placeholder="Спасения"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="2"
+              placeholder="Генераторы"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+
+        <div class="survivor-entry">
+
+          <input
+            class="survivor-name"
+            value="Leon Kennedy"
+          >
+
+          <div class="survivor-stats">
+
+            <input
+              class="rescues"
+              type="number"
+              value="1"
+            >
+
+            <input
+              class="generators"
+              type="number"
+              value="0"
+            >
+
+            <label>
+
+              Escape
+
+              <input
+                class="escaped"
+                type="checkbox"
+              >
+
+            </label>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <section class="bottom-panel">
+
+    <div class="penalty-box">
+
+      <label>
+
+        🚨 Штраф
+
+        <input
+          id="penalty"
+          type="checkbox"
+        >
+
+      </label>
+
+      <input
+        id="penaltyNote"
+        type="text"
+        placeholder="Комментарий судьи"
+      >
+
+    </div>
+
+    <button class="btn-submit">
+
+      СОХРАНИТЬ МАТЧ
+
+    </button>
+
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
